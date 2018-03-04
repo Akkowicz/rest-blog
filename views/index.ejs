@@ -1,0 +1,15 @@
+<% include ./partials/header %>
+<div class="ui main text container">
+    <% blogs.forEach((post) => { %>
+            <div class="ui blue huge header top attached segment"><%= post.title %></div>
+            <div class="ui attached segment">
+                <img class="ui centered rounded image" src="<%= post.image %>" alt="<%= post.title %> image">
+                <div class="content">
+                    <span><%= post.created.toLocaleDateString() %></span>
+                </div>
+                <p><%- post.body.substring(0, post.body.indexOf('.')+1) %></p>
+                <a href="/blogs/<%= post._id %>">Read More</a>
+            </div>
+    <% }); %>
+    </div>
+<% include ./partials/footer %>

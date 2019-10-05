@@ -12,3 +12,8 @@ patch:
         patched: '2019-07-28T13:33:18.802Z'
     - semantic-ui > gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
         patched: '2019-07-28T13:33:18.802Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - snyk > proxy-agent > https-proxy-agent:
+        patched: '2019-10-05T05:16:54.415Z'
+    - snyk > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2019-10-05T05:16:54.415Z'
